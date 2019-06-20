@@ -1,0 +1,19 @@
+syntax = "proto3";
+
+package aliyun;
+
+service Wechat {
+    // 处理请求
+    rpc ProcessCommonRequest(Request) returns (Response) {}
+}
+
+
+message Request{
+    string Domain = 1;
+    string ApiName = 2;
+    map<string, string> QueryParams = 3;
+}
+
+message Response {
+    string Content = 1;
+}
