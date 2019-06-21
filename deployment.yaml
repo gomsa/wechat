@@ -52,8 +52,6 @@ spec:
           ]
           env:
             - name: MINIPROGRAM_APP_ID
-              value: default
-            - name: APP_ID
               valueFrom:
                 secretKeyRef:
                   key: miniprogram-app-id
