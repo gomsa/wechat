@@ -20,8 +20,8 @@ func main() {
 
 	// 用户服务实现
 	pb.RegisterWechatHandler(srv.Server(), &hander.Wechat{
-		AppId:  env.Getenv("APP_ID", ""),
-		Secret: env.Getenv("SECRET", ""),
+		MiniprogramAppId:  env.Getenv("MINIPROGRAM_APP_ID", ""),
+		MiniprogramSecret: env.Getenv("MINIPROGRAM_SECRET", ""),
 	})
 
 	// Run the server

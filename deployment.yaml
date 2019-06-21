@@ -4,8 +4,8 @@ metadata:
   name: wechat
   namespace: srv
 data:
-  app-id: TFRBSWRzS1RrbXpySVY1Uw==
-  secret: aHNXRlhYTzdpWnlzcktWSnRvTXp5UmFhRU5RYzJ3
+  miniprogram-app-id: TFRBSWRzS1RrbXpySVY1Uw==
+  miniprogram-secret: aHNXRlhYTzdpWnlzcktWSnRvTXp5UmFhRU5RYzJ3
 ---
 kind: Service
 apiVersion: v1
@@ -51,17 +51,17 @@ spec:
             "--server_address=:8080",
           ]
           env:
-            - name: REGION_ID
+            - name: MINIPROGRAM_APP_ID
               value: default
             - name: APP_ID
               valueFrom:
                 secretKeyRef:
-                  key: app-id
+                  key: miniprogram-app-id
                   name: wechat
-            - name: SECRET
+            - name: MINIPROGRAM_SECRET
               valueFrom:
                 secretKeyRef:
-                  key: secret
+                  key: miniprogram-secret
                   name: wechat
           ports:
           - containerPort: 8080

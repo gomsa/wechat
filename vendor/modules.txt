@@ -1,5 +1,12 @@
 # github.com/armon/go-metrics v0.0.0-20180917152333-f0300d1749da
 github.com/armon/go-metrics
+# github.com/bigrocs/wechat v0.0.0-20190621013335-465e148087ae
+github.com/bigrocs/wechat
+github.com/bigrocs/wechat/requests
+github.com/bigrocs/wechat/credentials
+github.com/bigrocs/wechat/responses
+github.com/bigrocs/wechat/url
+github.com/bigrocs/wechat/util
 # github.com/go-log/log v0.1.0
 github.com/go-log/log
 github.com/go-log/log/log
@@ -135,6 +142,8 @@ github.com/pkg/errors
 # github.com/sean-/seed v0.0.0-20170313163322-e2103e2c3529
 github.com/sean-/seed
 # golang.org/x/crypto v0.0.0-20190605123033-f99c8df09eb5
+golang.org/x/crypto/pkcs12
+golang.org/x/crypto/pkcs12/internal/rc2
 golang.org/x/crypto/ed25519
 golang.org/x/crypto/ed25519/internal/edwards25519
 # golang.org/x/net v0.0.0-20190606173856-1492cefac77f
