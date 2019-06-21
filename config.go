@@ -9,7 +9,7 @@ var Conf config.Config
 
 func init() {
 	Conf = config.Config{
-		Service: "aliyun",
+		Service: "wechat",
 		Version: "latest",
 	}
 }
